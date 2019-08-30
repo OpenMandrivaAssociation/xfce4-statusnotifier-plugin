@@ -4,7 +4,7 @@
 Name:		xfce4-statusnotifier-plugin
 Summary:	A Status Notifier plugin for the Xfce panel
 Version:	0.2.1
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 Url:		https://goodies.xfce.org/projects/panel-plugins/xfce4-statusnotifier-plugin
@@ -31,11 +31,11 @@ has the freedesktop.org specification.
 %setup -q
 
 %build
-%configure2_5x
-%make
+%configure
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 # we don't want these
 find %{buildroot} -name "*.la" -delete
