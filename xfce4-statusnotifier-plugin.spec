@@ -43,7 +43,7 @@ find %{buildroot} -name "*.la" -delete
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc AUTHORS ChangeLog NEWS README* THANKS
+%doc AUTHORS ChangeLog NEWS THANKS
 %{_libdir}/xfce4/panel/plugins/libstatusnotifier.so
 %{_iconsdir}/hicolor/*/apps/xfce4-statusnotifier-plugin.*
 %{_datadir}/xfce4/panel/plugins/statusnotifier.desktop
