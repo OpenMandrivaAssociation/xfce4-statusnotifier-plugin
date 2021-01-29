@@ -3,8 +3,8 @@
 
 Name:		xfce4-statusnotifier-plugin
 Summary:	A Status Notifier plugin for the Xfce panel
-Version:	0.2.2
-Release:	2
+Version:	0.2.3
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 Url:		https://goodies.xfce.org/projects/panel-plugins/xfce4-statusnotifier-plugin
@@ -43,7 +43,7 @@ find %{buildroot} -name "*.la" -delete
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc AUTHORS ChangeLog NEWS README THANKS
+%doc AUTHORS ChangeLog NEWS README* THANKS
 %{_libdir}/xfce4/panel/plugins/libstatusnotifier.so
 %{_iconsdir}/hicolor/*/apps/xfce4-statusnotifier-plugin.*
 %{_datadir}/xfce4/panel/plugins/statusnotifier.desktop
