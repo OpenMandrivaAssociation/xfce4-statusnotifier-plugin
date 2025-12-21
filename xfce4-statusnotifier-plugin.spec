@@ -9,6 +9,11 @@ License:	GPLv2+
 Group:		Graphical desktop/Xfce
 Url:		https://goodies.xfce.org/projects/panel-plugins/xfce4-statusnotifier-plugin
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-statusnotifier-plugin/%{url_ver}/xfce4-statusnotifier-plugin-%{version}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(dbusmenu-gtk3-0.4)
 BuildRequires:	pkgconfig(gio-2.0)
